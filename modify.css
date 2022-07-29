@@ -1,0 +1,68 @@
+@media only screen and (min-width:980px)
+{
+    #nav{
+        display: none;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:979px)
+{
+    #modified{
+        display: none;
+    }
+
+}
+#modified a{
+text-decoration: none;
+}
+
+.class{
+    width: fit-content;
+    height: 100%;
+    background-color:#4a494973;
+    position: relative;
+    z-index: 200;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+.logo{
+    width: 250px;
+    height: 50px;
+    display: flex;
+    
+
+}
+#name{
+    font-size: 22px;
+    line-height: 50px;
+    padding: 0 45px 0 45px;
+    margin: 0 auto;
+    border-right: 2px solid#cfcf06;
+    margin-left: 0;
+    
+}
+#logo{
+    width: 78px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.links a{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    color: #fff;
+    margin-top: 5px;
+    text-align: center;
+    
+}
+
+
+

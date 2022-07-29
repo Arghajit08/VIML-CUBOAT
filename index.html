@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuboat</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-avatar@1.0.3/dist/avatar.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="modify.css">
+  
+    <link rel="stylesheet" href="basic.css">
+    <style>
+     body{
+       height: 100%;
+       
+     }
+     .amodal:hover{
+       border: 1px solid rgb(223, 223, 0)!important; 
+
+       /* transition-duration: 1.5s; */
+     }
+     #lbutton:hover{
+       border: 3px solid white!important;
+       color: white!important;
+       transition-duration: 0.5s;
+     }
+     #sbutton:hover{
+       border: 3px solid white!important;
+       color: white!important;
+       transition-duration: 0.5s;
+     }
+     .anav:hover{
+       color: rgb(255, 123, 0)!important;
+       transition-duration: .3s!important;
+     }
+     .afoot:hover{
+       opacity: 1!important;
+       transition-duration: 0.5s;
+     }
+     @media only screen and (min-width: 940px) {
+       #smenu{display: none;}
+       #sfoot{display: none;}
+       #sbutton{display: none;}
+     }
+     @media only screen and (max-width: 939px) {
+  /* For mobile phones: */
+     #lmenu{display: none;}
+     /* #smenu{display: contents !important;;} */
+     #lfoot{display: none;}
+     #lbutton{display: none;}
+     #video{
+       position: initial !important;;
+       width: 105%!important;
+       height: 120%!important;
+       margin-right: 0px!important;
+       top: 15px!important;
+       left: 0px!important;
+       /* object-fit: cover!important; */
+     }
+                     
+     #cnav{
+       /* width: 95%!important; */
+       /* margin-right: 5%; */
+     }
+     .navdrop{
+        
+     }
+    }
+    #anim{
+      animation: loading 10s ease-in-out 1.5s 1 alternate;     
+    }
+    @keyframes loading {
+      from{
+          background-color: #000000;
+          opacity: 1;
+          /* display: initial!important; */
+          /* transform: translateY(0px); */
+      }
+      to{
+         background-color: rgba(0, 0, 0, 0);
+         /* display: initial!important; */
+         opacity: 0; 
+         /* transform: translateY(-100%); */
+      }
+    } 
+    </style>
+</head>
+<body>
+  <nav id="modified">
+    <div class="class">
+      <div class="logo">
+        <a class="white yellow item" style="background-color: rgb(217, 217, 7); color: rgb(255, 255, 255);" href="index.html"  id="name">
+          CUBOAT
+         </a>
+         <a class="white yellow item" style=" background-color: rgb(217, 217, 7); color: rgb(255, 255, 255); " href="index.html" id="logo">
+          <img src="image/vimllogo.png" width="40px" height="22px" alt="">
+         </a>
+      </div>
+
+      <div class="links">
+        <a class="item anav" href="application.html" >Application</a>
+                <a class="item anav" href="news.html" >NewsRoom</a>
+                <a class="item anav" href="#acheivers" >Technology</a>
+                <a class="item anav" href="#faculty" >Research</a>
+                
+                <a class="item anav" href="#foot">About</a>
+                <a class="item anav" href="#foot" >SupportUs</a>
+
+
+      </div>
+
+    
+    </div>
+
+  </nav>
+    <nav style="border-radius: 0px; z-index: 200;width:100%;background-color: #4a494973;height: 56px;" id="cnav">
+
+        <div class="ui large top fixed menu" style="background-color: #45404078;box-shadow: 2px;" id="nav">
+          <!-- <a id="logo" class="item" style="width:103px;" href="">
+            <img src="image/1Stop_logo-removebg-preview.png" alt="">
+          </a> -->
+          <a class="white yellow item" style="font-size:22px; background-color: rgb(217, 217, 7); color: rgb(255, 255, 255);" href="index.html">
+           CUBOAT
+          </a>
+          <a class="white yellow item" style="font-size:22px; background-color: rgb(217, 217, 7); color: rgb(255, 255, 255); margin-left: 0px;" href="index.html">
+           <img src="image/vimllogo.png" width="40px" height="22px" alt="">
+          </a>
+          <div class="right menu" id="lmenu">
+            <!-- <div class="ui dropdown item" style="font-size:19px;"> -->
+              <!-- Goto -->
+              <!-- <i class="dropdown icon"></i> -->
+              <!-- <div class="menu"> -->
+                <a class="item anav" href="application.html" style="color: white;font-size:19px; margin-right: 2px;">Application</a>
+                <a class="item anav" href="news.html" style="color: white;font-size:19px;margin-right: 2px;">NewsRoom</a>
+                <a class="item anav" href="#acheivers" style="color: white;font-size:19px;margin-right: 2px;">Technology</a>
+                <a class="item anav" href="#faculty" style="color: white;font-size:19px;margin-right: 2px;">Research</a>
+                <!-- <a class="item" href="#features">Features</a> -->
+                
+                <a class="item anav" href="#foot" style="color: white;font-size:19px;margin-right: 2px;">About</a>
+                <a class="item anav" href="#foot" style="color: white;font-size:19px;margin-right: 2px;">SupportUs</a>
+          </div>
+          <div class="right menu" id="smenu"style="margin-right:5px ;" >
+              <div class="ui dropdown item"  >
+                &#9776;</i>
+                <div class="menu navdrop" style="width: 200px;">
+                    <a class="item anav" href="application.html">Application</a>
+                    <a class="item anav" href="news.html">NewsRoom</a>
+                    <a class="item anav" href="services.html">Technology</a>
+                    <a class="item anav" href="blog.html">Research</a>
+                    
+                    <a class="item anav" href="contact.html">AboutUs</a>
+                    <a class="item anav" href="contact.html">SupportUs</a>          
+                </div>
+              </div>  
+              <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="right menu">
+              <div class="ui dropdown item" style="font-size:19px;">
+                &#9776;</i>
+                <div class="menu">
+                  <a class="item" href="">About Us</a>
+                  <a class="item" href="">Services</a>
+                  <a class="item" href="">Blog</a>
+                  <a class="item" href="">Contact Us</a>
+                </div>
+              </div> -->
+              <!-- <div class="right menu"> -->
+                <!-- <div class="ui dropdown item"> -->
+                  <!-- <i class="fa fa-globe" style="font-size:24px"></i> -->
+                  <!-- <div class="menu"> -->
+                    <!-- <a class="item" href="">BookRide</a> -->
+                    <!-- <a class="item" href="">SignUp</a> -->
+                     
+                  <!-- </div> -->
+                <!-- </div> -->
+    
+              </div>
+            </div>
+            <script>$('.ui.dropdown')
+                .dropdown()
+                ;
+            </script>
+    </nav>
+    <section id="pvideo" style="width: 100%;">
+      <div style="width: 100%; height: 100%;">
+        <video autoplay muted loop id="video" style="width: 100%;height: 100%!important; object-fit: cover; position: fixed;top:0px;z-index: 3;">
+            <source src="image/header.mp4" type="video/mp4">
+          </video>
+        <div id="contentan" style="text-align: center;">
+         <!-- <h1 style=" color: rgb(226, 148, 2); font-weight: 700; position: relative; top: 30%;">Anarc presents</h1> -->
+         <!-- <p style="color: rgb(230, 150, 3);position: relative; top: 30%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sapiente ut deserunt cum totam animi mollitia id cumque earum aperiam!</p> -->
+          <!-- <a href="" style="color: rgb(0, 0, 0); width: 120px; height: 50px; position: fixed; top: 40%; text-align: center;">Subscribe Us</a> -->
+          <button style="color: rgba(255, 255, 255, 0.747); width: 120px; height: 50px; position: fixed; top: 40%; text-align: center;border-radius: 30px; background-color: rgba(240, 248, 255, 0); border: 2px solid rgba(255, 255, 255, 0.735);" onclick="modal()" id="lbutton">send</button>
+          <button style="color: rgba(255, 255, 255, 0.747); width: 120px; height: 50px;width: 75px;height: 50px;position: absolute;top:-150px;left: 45%; text-align: center;border-radius: 30px; background-color: rgba(240, 248, 255, 0); border: 2px solid rgba(255, 255, 255, 0.735);" onclick="modal()" id="sbutton">send</button>
+          
+          <div class="ui basic modal" style="width: 300px;">
+            <div class="ui icon header">
+              <i class="send icon"></i>
+              Tell others about us.
+            </div>
+            <div class="content" style="width: 100%; text-align: center;">
+              <div class="ui one column grid">
+                <div class="row" style="text-align: center;">
+                  <div class="column"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fprayash25.github.io%2Fsuman-sir%2F%2F&title=Cuboat%20project&description=Cuboat&quote=Cuboat" style="text-decoration: solid; color: white;"><div style="margin-bottom: 5px; border: 1px solid rgb(255, 255, 255); width: 100%; height: 50px; font-size: 30px;" class="amodal">Facebook</div></a></div>
+                  
+                  <div class="column"><a href="https://api.whatsapp.com/send?text=Cuboat%20project%0D%0Ahttps%3A%2F%2F%2Fhttps://prayash25.github.io/suman-sir/%0D%0ACuboat" style="text-decoration: solid; color: white;"><div style="margin-bottom: 5px; border: 1px solid rgb(255, 255, 255); width: 100%; height: 50px; font-size: 30px;" class="amodal">Whatsapp</div></a></div>
+
+                  <div class="column"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fprayash25.github.io/suman-sir/%2F" style="text-decoration: solid; color: white;"><div style="margin-bottom: 5px; border: 1px solid rgb(255, 255, 255); width: 100%; height: 50px; font-size: 30px;" class="amodal">LinkedIn</div></a></div>
+                
+                  <div class="column"><a href="https://t.me/share/url?url=https%3A%2F%2Fprayash25.github.io/suman-sir/%2F&text=Cuboat" style="text-decoration: solid; color: white;"><div style="margin-bottom: 5px; border: 1px solid rgb(255, 255, 255); width: 100%; height: 50px; font-size: 30px;" class="amodal">Telegram</div></a></div>
+                
+                  <div class="column"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fprayash25.github.io/suman-sir/%2F&media=&description=Cuboat%20project" style="text-decoration: solid; color: white;"><div style="margin-bottom: 5px; border: 1px solid rgb(255, 255, 255); width: 100%; height: 50px; font-size: 30px;" class="amodal">Pinterest</div></a></div>
+                </div>
+                <!-- <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div> -->
+              </div>
+            </div>
+            <div class="actions">
+              <div class="ui red basic cancel inverted button">
+                <i class="remove icon"></i>
+                cancel
+              </div>
+              <!-- <div class="ui green ok inverted button">
+                <i class="checkmark icon"></i>
+                Yes
+              </div> -->
+            </div>
+          </div>
+          <script id="modal">
+            const modal = () => {
+              console.log('ok1');
+              $('.ui.basic.modal')
+                .modal('show');
+
+            }
+          </script>
+         <!-- <button style="background-color: rgb(115, 114, 114); border-radius: 20px; color: rgb(255, 255, 255); width: 170px; height: 50px; position: fixed; top: 50%; text-align: center;">Subscribe Us</button> -->
+        </div>
+      </div> 
+    </section>   
+    <footer style="margin-top: 0px;">
+      <div id="lfoot" style=" width: 100%;" >
+        <!-- <div class="ui grid container" style="margin-left: auto;margin-right: auto; text-align: center;position: fixed;top: 80%;z-index: 15; display: flex; justify-content: space-around; flex-shrink:2; left: 4%; right: 4%;"> -->
+          <div class="ui four column centered grid" style="margin-left: auto;margin-right: auto; text-align: center;position: fixed;top: 80%;z-index: 15; ">
+            <div class="column" style="text-align: center ;">
+                <p style="color: rgb(255, 255, 255); opacity: 0.9;">A project by</p>
+                <a href="" style=" z-index:15; opacity: 0.6;" class="afoot"><img src="image/NITA5.png" style="width: 80%; position: relative; top: -1px;" alt=""></a>
+            </div>
+            <div class="column" style="text-align: center ;">
+              <p style="color: rgb(255, 255, 255); opacity: 0.9">An intiative of</p>
+              <a href="" style=" z-index:15; opacity: 0.6"  class="afoot"><img src="image/Anarc4.png" style="width: 80%; position: relative; top: -16px;" alt=""></a>
+            </div>
+            <div class="column">
+              <p style="color: rgb(255, 255, 255); opacity: 0.9">Sponsors</p>
+              <a href="" style=" z-index:15;opacity: 0.6"  class="afoot"><img src="image/1Stop_logo.png" style="width: 80%; position: relative; top: -12px;" alt=""></a>
+            </div>
+            <div class="column">
+              <p style="color: rgb(255, 255, 255); opacity: 0.9">With Collaboration</p>
+              <a href="" style=" z-index:15; opacity: 0.6" class="afoot"><img src="image/1Stop_logo.png" style="width: 80%;position: relative; top: -12px;" alt=""></a>
+            </div>
+          </div>
+      </div>
+      <div id="sfoot" style="background-color:rgb(217, 217, 7); width: 100%;">
+       <div class="ui four column grid" style="background-color:rgb(217, 217, 7);">
+        <div class="row" style="margin: 10px;">
+          <div class="column" style="width: 200px;">
+            <p style="color: rgb(255, 255, 255); opacity: 0.9;">A project by</p>
+            <a href="" style=" z-index:15; opacity: 0.6;" class="afoot"><img src="image/NITA5.png" style="width: 100%!important;" alt=""></a>
+          </div>
+        </div>
+        <div class="row" style="margin: 10px;">
+          <div class="column" style="width: 200px;"><p style="color: rgb(255, 255, 255); opacity: 0.9">An intiative of</p>
+            <a href="" style=" z-index:15; opacity: 0.6"  class="afoot"><img src="image/Anarc4.png" style="width: 100%!important;" alt=""></a></div>
+        </div>
+        <div class="row" style="margin: 10px;">
+          <div class="column" style="width: 200px;"><p style="color: rgb(255, 255, 255); opacity: 0.9">Sponsors</p>
+            <a href="" style=" z-index:15;opacity: 0.6"  class="afoot"><img src="image/1Stop_logo.png" style="width: 100%!important;" alt=""></a></div>
+        </div>
+        <div class="row" style="margin: 10px;">
+          <div class="column" style="width: 200px;"><p style="color: rgb(255, 255, 255); opacity: 0.9">With Collaboration</p>
+            <a href="" style=" z-index:15; opacity: 0.6" class="afoot"><img src="image/1Stop_logo.png" style="width: 100%!important;" alt=""></a></div>
+        </div>
+      </div>
+      <!-- <div class="ui grid container" style="margin-left: auto;margin-right: auto; text-align: center;position: fixed;top: 80%;z-index: 15; display: flex; justify-content: space-around; flex-shrink:2; left: 4%; right: 4%;">
+        <div class="four wide column" style="text-align: center ;">
+            <p style="color: rgb(255, 255, 255); opacity: 0.9;">A project by</p>
+            <a href="" style=" z-index:15; opacity: 0.6;" class="afoot"><img src="image/NITA5.png" style="width: 80%; position: relative; top: -6px;" alt=""></a>
+        </div>
+        <div class="four wide column" style="text-align: center ;">
+          <p style="color: rgb(255, 255, 255); opacity: 0.9">An intiative of</p>
+          <a href="" style=" z-index:15; opacity: 0.6"  class="afoot"><img src="image/Anarc4.png" style="width: 80%; position: relative; top: -16px;" alt=""></a>
+        </div>
+        <div class="four wide column">
+          <p style="color: rgb(255, 255, 255); opacity: 0.9">Sponsors</p>
+          <a href="" style=" z-index:15;opacity: 0.6"  class="afoot"><img src="image/1Stop_logo.png" style="width: 80%; position: relative; top: -12px;" alt=""></a>
+        </div>
+        <div class="four wide column">
+          <p style="color: rgb(255, 255, 255); opacity: 0.9">With Collaboration</p>
+          <a href="" style=" z-index:15; opacity: 0.6" class="afoot"><img src="image/1Stop_logo.png" style="width: 80%;position: relative; top: -12px;" alt=""></a>
+        </div>
+    </div> -->
+    </div>
+    </footer>
+
+    <section id="anim" style="width: 100%!important; height: 100%!important;z-index:1000;position: fixed;top:10px;opacity: 1; display: none; ">
+      <!-- -->
+      <video autoplay muted loop id="anima" style="width: 100%!important;height: 100%!important; ">
+        <source src="image/anim.mp4" type="video/mp4">
+      </video>
+
+  </section>
+</body>
+</html>
